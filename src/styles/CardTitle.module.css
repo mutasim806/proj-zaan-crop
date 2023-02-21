@@ -1,0 +1,56 @@
+.addedCard {
+    margin-top: 8px;
+}
+
+.addedCardTitle {
+    margin-bottom: 8px;
+}
+
+.addedCardTitle img {
+    cursor: pointer;
+}
+
+.addedCardTitle .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    /* line-height: 16px; */
+}
+
+.fieldRow {
+    margin-top: 8px;
+}
+
+.addBtn {
+    background-color: #0E8CFF;
+    color: #fff;
+    width: 53px;
+    max-width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    height: 34px;
+    border-radius: 6px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.addCard {
+    border: 2px solid rgba(7, 15, 33, 0.04);
+    border-radius: 8px;
+    padding: 11px 15px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.addCard img {
+    margin-right: 7px;
+}
+
+.text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #0E8CFF;
+}
+/* .textFieldWrapper{
+    max-width: 200px;
+} */

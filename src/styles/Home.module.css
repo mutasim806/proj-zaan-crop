@@ -1,0 +1,162 @@
+.contentBodyWrapper {
+    padding: 24px 30px 0px 30px;
+    height: calc(100vh - 150px);
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.contentBodyWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.boradRowWrapper {
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+
+.boardCardWrapper {
+    flex-basis: 20%;
+    padding: 0 4px;
+}
+
+.boardCard {
+    background: rgba(7, 15, 33, 0.04);
+    padding: 8px;
+    border-radius: 8px;
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.boardCard::-webkit-scrollbar {
+    display: none;
+}
+
+.boardTickets {
+    min-height: auto;
+    max-height: calc(100vh - 290px);
+    overflow: auto;
+    scrollbar-width: thin;
+    padding-right: 3px;
+    margin-top: 8px;
+}
+
+.boardTickets::-webkit-scrollbar {
+    width: 4px;
+    background-color: #fff;
+}
+
+.boardTickets::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: rgba(7, 15, 33, 0.2);
+    border-radius: 34px;
+}
+
+.titleWrapper {
+    margin-bottom: 6px;
+}
+
+.titleWrapper h3 {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.titleWrapper h3 span {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.imageWrapper img {
+    opacity: 0.5;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.imageWrapper img:first-of-type {
+    margin-left: 0;
+}
+
+.imageWrapper {
+    margin-left: 8px;
+}
+
+.menuIcon {
+    margin-top: -3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.sideActions {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.action {
+    background-color: #0E8CFF;
+    min-height: 32px;
+    width: 32px;
+    border-radius: 8px 0px 0px 8px;
+    margin-bottom: 8px;
+}
+
+.action.violet {
+    background-color: #6248FF;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .contentBodyWrapper {
+        padding: 20px 15px 0px;
+    }
+
+    .boardCardWrapper {
+        flex-basis: 23%;
+    }
+
+    .sidebarTop {
+        padding: 24px 15px 24px 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .boardCardWrapper {
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .boardCardWrapper {
+        flex-basis: 27%;
+    }
+}
+
+@media (max-width: 768px) {
+    .boardTickets {
+        max-height: calc(100vh - 370px);
+    }
+    .contentBodyWrapper{
+        height: calc(100vh - 200px);
+    }
+}
+
+@media (max-width: 576px) {
+    .boardCardWrapper {
+        flex-basis: 80%;
+    }
+
+    .boardTickets {
+        max-height: calc(100vh - 440px);
+    }
+    .contentBodyWrapper{
+        height: calc(100vh - 290px);
+    }
+
+    .listActionModal {
+        left: unset !important;
+        right: 10px !important;
+        width: 230px;
+    }
+}

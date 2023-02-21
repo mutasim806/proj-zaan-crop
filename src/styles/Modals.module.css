@@ -1,0 +1,282 @@
+.pinModal {
+    width: 295px !important;
+}
+
+.pinSearchBar {
+    background-color: #fff;
+}
+
+.searchFieldWrapper {
+    display: flex;
+    padding: 12px 18px;
+}
+
+.searchIcon {
+    height: 16px;
+    width: 16px;
+    opacity: 0.7;
+    margin-top: -2px;
+}
+
+.searchInput {
+    border: none;
+    padding-left: 8px;
+    font-size: 13px;
+    background-color: #fff;
+    color: black;
+}
+
+.searchInput::placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(7, 15, 33, 0.4);
+}
+
+.pinModalBodyWrapper {
+    padding: 20px 5px 0;
+    background-color: #EFF2F5;
+}
+
+.pinCarWrapper {
+    padding: 0 15px;
+    background-color: #EFF2F5;
+    max-height: calc(100vh - 330px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.pinCarWrapper::-webkit-scrollbar {
+    /* background: rgba(7, 15, 33, 0.1); */
+    width: 4px;
+}
+
+.pinCarWrapper::-webkit-scrollbar-thumb {
+    background: rgba(7, 15, 33, 0.1);
+    border-radius: 29px;
+    width: 4px;
+}
+
+
+/* File Modal */
+.fileModal {
+    width: 295px !important;
+}
+
+.bottomDetails {
+    display: flex;
+    align-items: center;
+    background: #E9E6FF;
+    border-radius: 0px 0px 8px 8px;
+    margin-top: -12px;
+    font-size: 11px;
+    min-height: 24px;
+    margin-bottom: 12px;
+    padding: 4px;
+}
+
+.profile {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.bottomStatus {
+    margin-left: 4px;
+    color: rgba(7, 15, 33, 0.6);
+    margin-right: 2px;
+}
+
+/* Views Modal */
+
+.viewsModal {
+    width: 369px !important;
+}
+
+.viewsListWrapper {
+    padding: 17px 0;
+}
+
+.viewsListItem {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 0 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.listItemActive {
+    background: rgba(7, 15, 33, 0.04);
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    background-color: #FF3477;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.listText {
+    margin-top: -2px;
+}
+
+.listLeft {
+    display: flex;
+    align-items: center;
+}
+
+
+.listRight {
+    padding-right: 15px;
+}
+
+.deleteImg {
+    cursor: pointer;
+}
+
+/* Filter Modal */
+
+.mainFilterBodyWrapper {
+    padding: 15px 5px;
+}
+
+.filterBodyWrapper {
+    padding: 0 10px;
+    max-height: calc(100vh - 330px);
+    overflow-y: auto;
+    stroke-width: thin;
+}
+
+.filterBodyWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+
+.filterBodyWrapper::-webkit-scrollbar-thumb {
+    background: rgba(7, 15, 33, 0.1);
+    border-radius: 29px;
+    width: 4px;
+}
+
+/* Modal Footer */
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.clear {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(7, 15, 33, 0.5);
+    margin-right: 16px;
+}
+
+.apply {
+    background-color: #0E8CFF;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(7, 15, 33, 0.05);
+}
+
+/* Sort Modal */
+
+.sortModal {
+    width: 238px !important;
+}
+
+.listItem {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 0 8px 15px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.listActionBodyWrapper {
+    padding: 16px 19px;
+}
+
+.listWrapper {
+    padding: 15px 0;
+}
+
+.listActionItem {
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: rgba(7, 15, 33, 0.7);
+}
+
+.listItemActive {
+    background: rgba(7, 15, 33, 0.04);
+}
+
+.listAction {
+    width: 273px !important;
+}
+
+.bodySortModal {
+    width: 238px !important;
+}
+
+@media (max-width: 768px) {
+    .bodySortModal {
+        right: unset;
+        left: 25px !important;
+    }
+
+    .listAction {
+        right: unset;
+        left: 25px !important;
+    }
+
+    .pinCarWrapper{
+        max-height: calc(100vh - 460px);
+    }
+    .filterBodyWrapper{
+        max-height: calc(100vh - 460px);
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* file modal media query */
+    .fileModal {
+        width: 250px !important;
+    }
+
+    .bodySortModal {
+        left: unset !important;
+        right: 65px !important;
+    }
+
+    .viewsModal {
+        width: 260px !important;
+    }
+
+    .pinModal {
+        width: 250px !important;
+    }
+
+    .filterModal {
+        width: 260px !important;
+    }
+
+    .sortModal {
+        width: 220px !important;
+    }
+
+    .listAction {
+        width: 250px !important;
+    }
+
+    .bodySortModal {
+        width: 220px !important;
+    }
+}

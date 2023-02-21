@@ -1,0 +1,423 @@
+.topHeaderSection {
+    padding: 18px 30px;
+    border-bottom: 1px solid #EBECED;
+    max-height: 76px;
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    scrollbar-width: none;
+}
+
+.topHeaderSection::-webkit-scrollbar {
+    display: none;
+}
+
+.addBtn {
+    min-height: 40px;
+    width: 40px;
+    background-color: #0E8CFF;
+    border-radius: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.headerSelectOption {
+    background-color: #fff;
+}
+
+.leftAction {
+    background: rgba(7, 15, 33, 0.06);
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px 4px;
+    min-height: 40px;
+}
+
+.profileData {
+    border-right: 1px solid rgba(7, 15, 33, 0.1);
+    padding-right: 8px;
+}
+
+.profileData img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.profileData:first-of-type {
+    padding-left: 0;
+}
+
+.profileData:last-of-type {
+    padding-left: 8px;
+    padding-right: 0;
+    border-right: unset;
+}
+
+.profileData:last-of-type .number {
+    background-color: #B0A1DF;
+}
+
+.number {
+    background-color: #FAAD14;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 4px;
+    min-height: 20px;
+    width: 24px;
+    border-radius: 4px;
+}
+
+.rightAction {
+    background: #FFFFFF;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    border-radius: 0px 8px 8px 0px;
+    min-height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.rightAction img {
+    height: 6px;
+    width: 11px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.headerActionButtonsWrapper{
+    width: 100%;
+}
+
+.headerLeftWrapper{
+    width: 100%;
+}
+
+
+.topHeaderActionButtons {
+    min-height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    border-radius: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.projectActionCenter .topHeaderActionButtons {
+    min-height: 36px;
+    width: 36px;
+    margin-left: 12px;
+}
+
+.searchBar {
+    margin-left: 8px;
+    width: calc(100% - 94px);
+}
+
+.input-group-text {
+    background-color: transparent !important;
+}
+
+.headerProfile {
+    cursor: pointer;
+}
+
+.headerProfile img {
+    min-height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.projectActionSection {
+    padding: 19px 30px;
+    border-bottom: 1px solid #EBECED;
+    max-height: 68px;
+    scrollbar-width: none;
+}
+
+.projectActionSection::-webkit-scrollbar {
+    display: none;
+}
+
+.projectActionCenter {
+    margin-left: 20px;
+    width: calc(100% - 273px);
+}
+
+.membersNumber {
+    min-height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 4px;
+    position: relative;
+}
+
+.num {
+    position: absolute;
+    background-color: #0E8CFF;
+    color: #fff;
+    min-height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.titleSection {
+    border-right: 1px solid rgba(7, 15, 33, 0.2);
+    padding-right: 20px;
+}
+
+.titleSection h2 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.titleActions {
+    margin-left: 24px;
+}
+
+.titleActionButtons {
+    min-height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(7, 15, 33, 0.1);
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.titleActionButtons img {
+    height: 60%;
+    width: 60%;
+}
+
+.titleActionButtons:first-of-type {
+    margin-left: 0;
+    background-color: #0E8CFF;
+}
+
+.actionsTextButton {
+    min-height: 36px;
+    padding: 0 8px;
+    background-color: #fff;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    border-radius: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.text {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.modalPosition {
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    
+    .projectActionCenter .topHeaderActionButtons {
+        margin-left: 8px;
+    }
+
+    .projectActionSection {
+        padding: 15px;
+    }
+
+    .actionsTextButton {
+        margin-left: 8px;
+    }
+
+    .actionsTextButton .text {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .projectActionCenter .topHeaderActionButtons {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .addBtn {
+        min-height: 35px;
+        width: 35px;
+        border-radius: 6px;
+        margin-left: 6px;
+    }
+
+    .leftAction {
+        min-height: 35px;
+    }
+
+    .profileData img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .number {
+        font-size: 10px;
+        min-height: 16px;
+        width: 20px;
+    }
+
+    .rightAction {
+        min-height: 35px;
+    }
+
+    .topHeaderActionButtons {
+        min-height: 35px;
+        width: 35px;
+        border-radius: 6px;
+        margin-left: 6px;
+    }
+
+    .searchBar {
+        width: calc(100% - 63px);
+    }
+
+    .titleActions {
+        margin-left: 12px;
+    }
+
+    .titleSection {
+        padding-right: 14px;
+    }
+
+    .titleSection h2 {
+        font-size: 18px;
+    }
+
+    .projectActionCenter {
+        margin-left: 15px;
+        width: calc(100% - 236px);
+    }
+
+    .titleActionButtons {
+        min-height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topHeaderSection {
+        flex-wrap: wrap;
+        overflow:unset;
+        padding: 10px;
+        flex-direction: column;
+        align-items: unset;
+        max-height: unset;
+
+    }
+
+    .titleSection{
+        border: unset;
+    }
+
+    .headerActionButtonsWrapper{
+        margin-top: 8px;
+    }
+
+    .topHeaderActionButtons {
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .addBtn {
+        height: 35px;
+        min-width: 35px;
+    }
+
+    /* .searchBar {
+        width: 100%;
+        max-width: 230px;
+    } */
+
+    .projectActionCenter {
+        margin-left: 0px;
+        width: calc(100% - 36px);
+        margin-top: 8px;
+
+    }
+
+    .projectActionSection {
+        flex-wrap: nowrap;
+        overflow: unset;
+        padding: 10px;
+        max-height: unset;
+        flex-wrap: wrap;
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    .membersNumber{
+        margin-bottom: 4px;
+    }
+
+    .actionsTextButton {
+        width: 72px;
+    }
+    .headerLeftWrapper{
+        margin-left: -6px;
+    }
+}
+
+@media (max-width: 576px){
+    .projectActionCenter{
+        flex-direction: column;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .projectActionCenter .topHeaderActionButtons{
+        margin-top: 8px;
+        min-height: 25px;
+        width: 25px;
+        margin-left: 4px;
+    }
+
+    .topHeaderActionButtons img{
+        height: 14px;
+        width: 14px;
+    }
+
+    .actionsTextButton{
+        margin-top: 8px;
+        margin-left: 4px;
+    }
+    .projectActionCenter .actionsTextButton img{
+        height: 12px;
+        width: 12px;
+    }
+
+    .headerActionButtonsWrapper{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .headerRightWrapper{
+        margin-left: -6px;
+        margin-top: 6px;
+    }
+}
+
+@media (max-width: 375px){
+    .actionsTextButton{
+        padding: 0 3px;
+    }
+    .projectActionSection{
+        padding: 10px 7px;
+    }
+    .topHeaderSection{
+        padding: 10px 7px;
+    }
+}

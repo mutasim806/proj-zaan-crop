@@ -1,0 +1,153 @@
+.sidebarSection {
+    min-width: 270px;
+    background-color: #fff;
+    border-right: 1px solid rgba(7, 15, 33, 0.08);
+    height: 100vh;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.sidebarSection.toggledSidebar {
+    min-width: 70px;
+    width: 70px;
+}
+
+.sidebarTop {
+    padding: 27px 20px 27px 34px;
+    border-bottom: 1px solid #EBECED;
+    max-height: 76px;
+    position: relative;
+    z-index: 0;
+}
+
+.logo {
+    cursor: pointer;
+    min-width: 151px;
+}
+
+.logoText {
+    font-weight: 600;
+    line-height: 21px;
+    margin: 0 8px;
+}
+
+.downImg {
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+.toggleImg {
+    cursor: pointer;
+}
+
+.closeSidebar {
+    display: none;
+}
+
+.menuItemsWrapper {
+    padding: 40px 15px 30px;
+    max-height: calc(100vh - 76px);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.menuItemsWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.menuItem {
+    padding: 13px 16px;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.menuItem.activeMenu {
+    background-color: #F6F6FF;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.menuItem:last-of-type {
+    margin-top: 14px;
+    border-top: 1px solid #EBECED;
+    padding-top: 28px;
+}
+
+.menuText {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 16px;
+}
+
+.mobileSideToggle {
+    display: none;
+}
+
+@media (max-width: 1366px){
+    .menuItemsWrapper{
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebarSection {
+        min-width: 226px;
+    }
+
+    .sidebarSection.toggledSidebar {
+        min-width: 65px;
+        width: 65px;
+    }
+
+    .menuItemsWrapper {
+        padding: 20px 10px;
+    }
+
+    .menuItemsWrapper .menuItem {
+        padding: 10px 16px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebarSection {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: -226px;
+        transition: all 0.3s;
+    }
+
+    .sidebarSection.left0 {
+        left: 0;
+    }
+
+    .logo {
+        pointer-events: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .closeSidebar {
+        display: block;
+    }
+
+    .mobileSideToggle {
+        display: block;
+        border-right: 1px solid #EBECED;
+        height: 100vh;
+        padding: 20px 10px;
+    }
+
+    .toggleIcon {
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #EBECED;
+        border-radius: 4px;
+    }
+}
